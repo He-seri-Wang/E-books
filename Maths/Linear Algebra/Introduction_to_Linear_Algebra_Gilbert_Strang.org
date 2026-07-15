@@ -1,22 +1,22 @@
 #+title: Introduction To Linear Algebra Gilbert Strang
-1 Vectors and Matrices/向量和矩阵 . . . . . . . . . . . . . . .1/1
-1.1 Vectors and Linear Combinations/向量及其线性组合. . . . . . 2/2
+* 1 Vectors and Matrices/向量和矩阵 . . . . . . . . . . . . . . .1/1
+** 1.1 Vectors and Linear Combinations/向量及其线性组合. . . . . . 2/2
 1.1.1 Linear Combinations cv+dw/线性组合 cv + dw . . . .  . . 3/3
 1.1.2 Solving Two Equaations/求解二元方程组 . . . . . .  . . .  3/4
 1.1.3 Can Elimination Fail? /消元法会失效吗. . . . . .  . . . . 4/4
 1.1.4 Vectors in Three Dimensions/三维向量的情形. . . . . . .   5/5
 1.1.5 How Do We Know It is a Plane?/如何知道这是一个平面  . . .  5/6
 习题 1.1. . .  . . . . . . . . . . . . . . . . . . . . . . .  6/6
-1.2 Lengths and Angles from Dot Products/点积、长度和角度 . . . 9/9
+** 1.2 Lengths and Angles from Dot Products/点积、长度和角度 . . . 9/9
 1.2.1 Perpendicular Vectors/垂直向量  . . . . . . . . . . . . 11/11
 1.2.2 The Angle Between Two Vectors/向量之间的夹角 . . . . . . 12/13
 1.2.3 A Plane in 3 Dimensions/三维空间中的平面 . . . . . . . . 13/15
 习题 1.2 . . . . . .. . . . . . . . . . . . . . . . . . . .  15/16
-1.3 Matrices and Their Column Spaces/矩阵和它们的列空间 . . . . 18/19
+** 1.3 Matrices and Their Column Spaces/矩阵和它们的列空间 . . . . 18/19
 1.3.1 Thinking About the Column Space of A/A的列空间  . . . . 21/22
 1.3.2 Matrices of Rank One/秩1矩阵  . . . . . . . . . . . .  23/24
 习题 1.3. . . . . . . . . . . . . . . . . . . .  24/25
-1.4 Matrix Multiplication AB and CR/矩阵乘法 AB和 CR. . . . . 27/28
+** 1.4 Matrix Multiplication AB and CR/矩阵乘法 AB和 CR. . . . . 27/28
 1.4.1 AB is usually different from B A/通常来说 AB != BA . . 28/30
 1.4.2 (AB)C = A(BC). . . . . . . . . . . . . . . 30/30
 1.4.3 Review of AB/回顾矩阵乘法 AB . . . . . . . . . . . . . 31/31
@@ -26,9 +26,9 @@
 1.4.7 How to Find the Matrix R/如何找出矩阵 R . . . . . . . . . . . . . . .  34
 1.4.8 Columns of A times Rows of B ... Columns of C times Rows of R/A的列乘以B的行，C的列乘以R的行 . . . . . . . . .  35
 习题 1.4. . . . . . . . . . . . . . . . . . . .  37
-1.5 Thoughts on Chapter 1/谈谈第1章  . . . . . . . . . . . . . . . . . . . 39
-2 解线性方程组 Ax = b/Solving Linear Equations Ax = b. . . . . . . . . . . . . .39
-2.1 Elimination and Back Substitution/消元法和回代 . . . . . . . . . . . 40
+** 1.5 Thoughts on Chapter 1/谈谈第1章  . . . . . . . . . . . . . . . . . . . 39
+* 2 解线性方程组 Ax = b/Solving Linear Equations Ax = b. . . . . . . . . . . . . .39
+** 2.1 Elimination and Back Substitution/消元法和回代 . . . . . . . . . . . 40
 2.1.1 Back Substitution to Solve Ux = c/回代解法 Ux = c . . . . . . . . . . . . . . .  43
 2.1.2 From A to U and b to c: Elimination in Each Column/把A转化成 U，b转化成 c . . . . . . . . . . . .  44
 2.1.3 Possible Breakdown of Elimination/消元法失效的情况 . . . . . . . . . . . . . . . 44
@@ -36,19 +36,19 @@
 2.1.5 The Row Picture and the Column Picture/行向量和列向量的图示. . . . . . . . . . . . . . 46
 2.1.6 Examples of Elimination and Permutation/消元和置换的例子 . . . . . . . . . . . . . . . 46
 习题 2.1 . . . . . . . . . . . . . . . . . . . .  47
-2.2 Elimination Matrices and Inverse Matrices/初等矩阵和逆矩阵 . . . . . . . 49
+** 2.2 Elimination Matrices and Inverse Matrices/初等矩阵和逆矩阵 . . . . . . . 49
 2.2.1 The Facts About Inverse Matrices/和逆矩阵有关的事实 . . . . . . . . . . . . . .  51
 2.2.2 The Inverse of a Product AB/矩阵乘积AB的逆. . . . . . . . . . . . . . .  53
 2.2.3 L is the Inverse of E/L是E的逆 . . . . . . . . . . . . . . . . . 55
 习题 2.2. . . . . . . . . . . . . . . . . . . .  55
-2.3 Matrix Computations and A = LU/矩阵运算和LU分解  . . . . . . . . . . . . 57
+** 2.3 Matrix Computations and A = LU/矩阵运算和LU分解  . . . . . . . . . . . . 57
 2.3.1 The Cost of Elimination/消元法的计算复杂度 . . . . . . . . . . . . . .  59
 2.3.2 Proving  A = LU/证明LU分解 . . . . . . . . . . . . . . . . 60
 2.3.3 The Great Factorization A = LU/伟大的A = LU分解 . . . . . . . . . . . . . .  60
 2.3.4 Second Proof of A = LU : Multiply Columns Times Rows/A = LU的第二种证明：将列乘以行 . . . . . . . . . .  61
 2.3.5 Elimination Without Row Exchanges/不包含行对换的消元法. . . . . . . . . . . . . . 62
 习题 2.3. . . . . . . . . . . . . . . . . . . .  62
-2.4 Permutations and Transposes/置换与转置 . . . . . . . . . . . . . . 64
+** 2.4 Permutations and Transposes/置换与转置 . . . . . . . . . . . . . . 64
 2.4.1 Permutations/置换 . . . . . . . . . . . . . . . . . . . 65
 2.4.2 Properties of Permutation Matrices/置换矩阵的性质. . . . . . . . . . . . . . . . 66
 2.4.3 The PA = LU Factorization: Row Exchanges from P/PA = LU分解：P导致行交换 . . . . . . . . . . .  66
@@ -59,99 +59,99 @@
 2.4.8 Symmetric Matrices/对称矩阵 . . . . . . . . . . . . . . . . . . 70
 2.4.9 Symmetric Products AY A and AA™T and LDLT/对称乘积 ATA、AAT和 LDLT分解 . . . . . . . . . . 71
 习题 2.4. . . . . . . . . . . . . . . . . . . .  72
-2.5 Derivatives and Finite Difference Matrices/导数和有限差分矩阵 ................ 74
+** 2.5 Derivatives and Finite Difference Matrices/导数和有限差分矩阵 ................ 74
 2.5.1 Turning the Formulas Around : Derivatives from Differences/公式的逆向推导：由差值求导数 . . . . . . . . . . . . 76
 2.5.2 Second Difference Matrices K, T, B/二阶差分矩阵 K、T、B . . . . . . . . . . . . . . 77
 2.5.3 Properties of K/矩阵K的性质. . . . . . . . . . . . . . . .  78
 2.5.4 The Free-Fixed Matrices T/一端自由一端固定的矩阵 Tn . . . . . . . . . . . .  80
 2.5.5 The Free-Free Matrices B_n, are Singular/两端自由的矩阵 B是奇异的 . . . . . . . . . . . .  80
 习题 2.5. . . . . . . . . . . . . . . . . . . .  81
-2.6 Thoughts on Chapter 2/谈谈第2章  . . . . . . . . . . . . . . . . . . . 83
-3 The Four Fundamental Subspaces/矩阵的四个基本子空间 . . . . . . . . . . . . . .75
-3.1 Vector Spaces and Subspaces/线性空间及其子空间 . . . . . . . . . . . . . . 76
+** 2.6 Thoughts on Chapter 2/谈谈第2章  . . . . . . . . . . . . . . . . . . . 83
+* 3 The Four Fundamental Subspaces/矩阵的四个基本子空间 . . . . . . . . . . . . . .75
+** 3.1 Vector Spaces and Subspaces/线性空间及其子空间 . . . . . . . . . . . . . . 76
 3.1.1 Examples of Vector Spaces/线性空间的例子. . . . . . . . . . . . . . . . 86
 3.1.2 Subspaces of Vector Spaces/线性空间的子空间 . . . . . . . . . . . . . . . 87
 3.1.3 The Column Space of A/A的列空间. . . . . . . . . . . . . . . . . 88
 3.1.4 The Row Space of A/A的行空间. . . . . . . . . . . . . . . . . 89
 3.1.5 The Columns of A Span the Vector Space C(A)/A的列向量张成了线性空间 C(A). . . . . . . . . . . . 89
 习题 3.1. . . . . . . . . . . . . . . . . . . .  90
-3.2 Computing the Nullspace by Elimination:A=CR/通过消元法 A = CR计算零空间 . . . . . . 84
+** 3.2 Computing the Nullspace by Elimination:A=CR/通过消元法 A = CR计算零空间 . . . . . . 84
 3.2.1 Elimination from A to rref( A) : Reduced Row Echelon Form/利用消元法将 A转化成 rref(A)：最简行阶梯形矩阵. . . . . 95
 3.2.2 Elimination Column by Column : The Steps from A to R0/逐列消元：从 A到 R0的步骤 . . . . . . . . . . . . 96
 3.2.3 The Matrix Factorization A = C R and the Nullspace/矩阵分解 A = CR和零空间 . . . . . . . . . . . .  97
 3.2.4 Block Elimination in Three Steps : Final Thoughts/消元法的终章 ：分块消元 . . . . . . . . . . . . . 100
 习题 3.2. . . . . . . . . . . . . . . . . . . . .101
-3.3 The Complete Solution to Ax = b/方程组 Ax = b的解集 . . . . . . . . . . . . 95
+** 3.3 The Complete Solution to Ax = b/方程组 Ax = b的解集 . . . . . . . . . . . . 95
 3.3.1 One Particular Solution Az, = b/方程组的特解 xp : Axp = b. . . . . . . . . . . . .106
 3.3.2 Full Row Rank and the Complete Solution/行满秩和解集 . . . . . . . . . . . . . . . .108
 习题 3.3. . . . . . . . . . . . . . . . . . . . .112
-3.4 Independence, Basis, and Dimension/线性无关性、基、维数 . . . . . . . . . . 106
+** 3.4 Independence, Basis, and Dimension/线性无关性、基、维数 . . . . . . . . . . 106
 3.4.1 Linear Independence/线性无关. . . . . . . . . . . . . . . . . 117
 3.4.2 Vectors that Span a Subspace/张成子空间的向量组 . . . . . . . . . . . . . . .120
 3.4.3 A Basis for a Vector Space/线性空间的基 . . . . . . . . . . . . . . . .120
 3.4.4 Bases for Matrix Spaces and Function Spaces/矩阵空间和函数空间的基 . . . . . . . . . . . . . 124
 习题 3.4. . . . . . . . . . . . . . . . . . . . .126
-3.5 Dimensions of the Four Subspaces/四个基本子空间的维数 . . . . . . . . . . . 120
+** 3.5 Dimensions of the Four Subspaces/四个基本子空间的维数 . . . . . . . . . . . 120
 3.5.1 The Four Subspaces for R0/R0的四个子空间. . . . . . . . . . . . . . . 132
 3.5.2 The Four Subspaces for A/A的四个子空间 . . . . . . . . . . . . . . . .134
 3.5.3 Rank Two Matrices = Rank One plus Rank One/秩2矩阵 = 秩1矩阵 + 秩1矩阵. . . . . . . . . . . 138
 习题 3.5. . . . . . . . . . . . . . . . . . . . .139
-4 Orthogonality/正交性 . . . . . . . . . . . . . . . . .135
-4.1 Orthogonality of Vectors and Subspaces/向量和子空间的正交性 . . . . . . . . 136
+* 4 Orthogonality/正交性 . . . . . . . . . . . . . . . . .135
+** 4.1 Orthogonality of Vectors and Subspaces/向量和子空间的正交性 . . . . . . . . 136
 4.1.1 Combining Bases from Subspaces
 习题 4.1. . . . . . . . . . . . . . . . . . . . .150
-4.2 Projections onto Lines and Subspaces/向直线和子空间作正交投影 . . . . . . . . . 143
+** 4.2 Projections onto Lines and Subspaces/向直线和子空间作正交投影 . . . . . . . . . 143
 4.2.1 Projection Onto a Line/正交投影到直线. . . . . . . . . . . . . . . 155
 4.2.2 Projection Onto a Subspace/正交投影到子空间 . . . . . . . . . . . . . . . 157
 习题 4.2. . . . . . . . . . . . . . . . . . . . .162
-4.3 Least Squares Approximations/最小二乘法 . . . . . . . . . . . . . 155
+** 4.3 Least Squares Approximations/最小二乘法 . . . . . . . . . . . . . 155
 4.3.1 Minimizing the Error/误差最小化 . . . . . . . . . . . . . . . . 166
 4.3.2 The Big Picture for Least Squares/最小二乘法的全局图景. . . . . . . . . . . . . . 168
 4.3.3 Fitting a Straight Line/直线拟合 . . . . . . . . . . . . . . . . . 169
 4.3.4 Dependent Columns in A: What is T ?/当A列向量线性相关时求解 x^ . . . . . . . . . . . .171
 4.3.5 Fitting by a Parabola/抛物线拟合 . . . . . . . . . . . . . . . . 172
 习题 4.3 . . . . . . . . . . . . . . . . . . . . .174
-4.4 Orthonormal Bases and Gram-Schmidt/正交矩阵和格拉姆-施密特正交化 . . . . . . . . . . 168
+** 4.4 Orthonormal Bases and Gram-Schmidt/正交矩阵和格拉姆-施密特正交化 . . . . . . . . . . 168
 4.4.1 Projections QQ™ Using Orthonormal Bases: Q Replaces A/用单位正交基来作正交投影：用 Q代替 A. . . . . . . . .181
 4.4.2 The Gram-Schmidt Process/格拉姆-施密特正交化 . . . . . . . . . . . . . . 182
 4.4.3 The Factorization A = QR/QR分解 . . . . . . . . . . . . . . . . .184
 Orthogonal Matrices Q and Orthogonal Projections P
 习题 4.4. . . . . . . . . . . . . . . . . . . . .188
-4.5 The Pseudoinverse of a Matrix/矩阵的广义逆. . . . . . . . . . . . . 182
+** 4.5 The Pseudoinverse of a Matrix/矩阵的广义逆. . . . . . . . . . . . . 182
 4.5.1 The Pseudoinverse AT (n X m) of a Matrix A (m X n)/m × n矩阵 A的广义逆 A+(n × m矩阵) . . . . . . . . . 193
 4.5.2 The Important Action of A is Row Space to Column Space/A的重要作用是把行空间映射成列空间. . . . . . . . . . 196
 4.5.3 The Pseudoinverse AT = RTCt of A = CR/A = CR的广义逆 A+ = R+C+ . . . . . . . . . . . .196
 4.5.4 Example of AT from A = Incidence Matrix of a Graph/广义逆的例子—— A是图的关联矩阵 . . . . . . . . . . .197
 习题 4.5. . . . . . . . . . . . . . . . . . . . .199
-4.6 Thoughts on the Victory of Orthogonality/谈谈第4章 ：正交性的巨大成功 . . . . . . . . . . . . . 199
-5 Determinants/行列式. . . . . . . . . . . . . . . . . . . . . . .191
-5.1 3 by 3 Determinants and Cofactors/三阶方阵的行列式和代数余子式. . . . . . . . . . . 192
+** 4.6 Thoughts on the Victory of Orthogonality/谈谈第4章 ：正交性的巨大成功 . . . . . . . . . . . . . 199
+* 5 Determinants/行列式. . . . . . . . . . . . . . . . . . . . . . .191
+** 5.1 3 by 3 Determinants and Cofactors/三阶方阵的行列式和代数余子式. . . . . . . . . . . 192
 5.1.1 3 by 3 Determinants/三阶方阵的行列式 . . . . . . . . . . . . . . . 202
 5.1.2 Cofactors and a Formula for A^-1/代数余子式和 A^-1的公式 . . . . . . . . . . . . . 204
 5.1.3 Example: The —1, 2, —1 Tridiagonal Matrix/三对角矩阵 . . . . . . . . . . . . . . . . 205
 习题 5.1. . . . . . . . . . . . . . . . . . . . .206
-5.2 Computing and Using Determinants/行列式的计算和使用 . . . . . . . . . . . 198
+** 5.2 Computing and Using Determinants/行列式的计算和使用 . . . . . . . . . . . 198
 5.2.1 Proving those Properties (1) to (4)/证明式(5.10) ~ 式 (5.13). . . . . . . . . . . . . .209
 5.2.2 Cramer’s Rule to Solve Az = b/克莱姆法则解方程组 Ax = b. . . . . . . . . . . . .210
 5.2.3 The Big Formula for the Determinant : n! Terms/行列式的完全展开式：n!项 . . . . . . . . . . . . 211
 习题 5.2. . . . . . . . . . . . . . . . . . . . .212
-5.3 Areas and Volumes by Determinants/行列式与面积和体积. . . . . . . . . . . 204
+** 5.3 Areas and Volumes by Determinants/行列式与面积和体积. . . . . . . . . . . 204
 习题 5.3. . . . . . . . . . . . . . . . . . . . .217
-6 Eigenvalues and Eigenvectors/特征值和特征向量. . . . . . . . . . . . . . .209
-6.1 Introduction to Eigenvalues : Ax = λx/初识特征值 Ax = λx. . . . . . . . . 210
+* 6 Eigenvalues and Eigenvectors/特征值和特征向量. . . . . . . . . . . . . . .209
+** 6.1 Introduction to Eigenvalues : Ax = λx/初识特征值 Ax = λx. . . . . . . . . 210
 6.1.1 The Equation for the Eigenvalues: det(A — AI) =0/特征方程：det(A - λI) = 0 . . . . . . . . . . . . 223
 6.1.2 Determinant and Trace/行列式和迹 . . . . . . . . . . . . . . . . 225
 6.1.3 Imaginary Eigenvalues/虚数特征值 . . . . . . . . . . . . . . . . 226
 6.1.4 Eigenvalues of AB and A+ B/AB和 A + B的特征值 . . . . . . . . . . . . . .227
 6.1.5 Eigshow in MATLAB/MATLAB中的Eigshow函数. . . . . . . . . . . . 231/230
 习题 6.1. . . . . . . . . . . . . . . . . . . . .231
-6.2 Diagonalizing a Matrix/矩阵的对角化 . . . . . . . . . . . . . . . . 225
+** 6.2 Diagonalizing a Matrix/矩阵的对角化 . . . . . . . . . . . . . . . . 225
 6.2.1 Similar Matrices : Same Eigenvalues/相似矩阵：特征值相同. . . . . . . . . . . . . . 239
 6.2.2 Fibonacci Numbers/斐波那契数列 . . . . . . . . . . . . . . . .241
 6.2.3 Matrix Powers A^k/矩阵方幂A^k . . . . . . . . . . . . . . . . 242
 6.2.4 Nondiagonalizable Matrices (Optional)/不可对角化的矩阵（选讲） . . . . . . . . . . . . .243
 习题 6.2. . . . . . . . . . . . . . . . . . . . .246
-6.3 Symmetric Positive Definite Matrices/对称正定矩阵 . . . . . . . . . 239
+** 6.3 Symmetric Positive Definite Matrices/对称正定矩阵 . . . . . . . . . 239
 6.3.1 Quick Proofs : Orthogonal Eigenvectors and Real Eigenvalues/快速证明：正交的特征向量和实特征值 . . . . . . . . . . 251
 6.3.2 Positive Definite Matrices/正定矩阵. . . . . . . . . . . . . . . . . 252
 6.3.3 Determinant Test and Pivot Test/顺序主子式判据和主元判据 . . . . . . . . . . . . .254
@@ -161,7 +161,7 @@ Orthogonal Matrices Q and Orthogonal Projections P
 6.3.7 Optimization and Machine Learning/最优化和机器学习 . . . . . . . . . . . . . . . 260
 6.3.8 All Symmetric Matrices are Diagonalizable/实对称矩阵都可以正交对角化. . . . . . . . . . . . 261
 习题 6.3. . . . . . . . . . . . . . . . . . . . .262
-6.4 Complex Numbers and Vectors and Matrices/复数、复向量和复矩阵 . . . . . . . 255
+** 6.4 Complex Numbers and Vectors and Matrices/复数、复向量和复矩阵 . . . . . . . 255
 6.4.1 Complex Vectors : Lengths ||v|| and Inner Products 77w/复向量：长度 ∥v∥和内积 vˉTw . . . . . . . . . . . .269
 6.4.2 Complex Matrices A and Complex Transpose A/复矩阵A及其共轭转置 AˉT . . . . . . . . . . . . 269
 6.4.3 The Four Fundamental Subspaces of a Complex Matrix A/复矩阵A的四个基本子空间 . . . . . . . . . . . . .269
@@ -172,17 +172,17 @@ Orthogonal Matrices Q and Orthogonal Projections P
 6.4.8 Multiplying Two Circulant Matrices CD = DC/循环矩阵相乘 CD = DC . . . . . . . . . . . . .273
 6.4.9 The Convolution Rule in Signal Processing/信号处理中的卷积 . . . . . . . . . . . . . . . 274
 习题 6.4. . . . . . . . . . . . . . . . . . . . .274
-6.5 Solving Linear Differential Equations/解线性微分方程. . . . . . . . . 263
+** 6.5 Solving Linear Differential Equations/解线性微分方程. . . . . . . . . 263
 6.5.1 Solution of du/dt = Au/du/dt = Au的解. . . . . . . . . . . . . . .276
 6.5.2 Second Order Equations/二阶微分方程 . . . . . . . . . . . . . . . .278
 6.5.3 Difference Equations/差分方程 . . . . . . . . . . . . . . . . . 280
 6.5.4 Stability of 2 by 2 Matrices/二阶方阵的稳定性 . . . . . . . . . . . . . . . 282
 6.5.5 The Exponential of a Matrix/矩阵的指数函数. . . . . . . . . . . . . . . 282
 习题 6.5. . . . . . . . . . . . . . . . . . . . .286
-6.6 Computing the Eigenvalues : The QR Algorithm/用QR计算特征值 . . . . . . . . . . . . . . . . .284/290
+** 6.6 Computing the Eigenvalues : The QR Algorithm/用QR计算特征值 . . . . . . . . . . . . . . . . .284/290
 6.7 Thoughts about Differential Equations/谈谈微分方程. . . . . . . . . . . . . . . . . .285/292
-7 The Singular Value Decomposition (SVD)/奇异值分解  . . . . . . . . .286
-7.1 Singular Values and Singular Vectors/奇异值和奇异向量 . . . . . . . . . 287
+* 7 The Singular Value Decomposition (SVD)/奇异值分解  . . . . . . . . .286
+** 7.1 Singular Values and Singular Vectors/奇异值和奇异向量 . . . . . . . . . 287
 7.1.1 The Geometry of the SVD/奇异值分解的几何意义. . . . . . . . . . . . . . 294
 7.1.2 The Full Size Form of the SVD/奇异值分解的完整型 . . . . . . . . . . . . . . .295
 7.1.3 The Reduced Form of the SVD/奇异值分解的简化型 . . . . . . . . . . . . . . .296
@@ -192,11 +192,11 @@ Orthogonal Matrices Q and Orthogonal Projections P
 7.1.7 The First Singular Vector v1/第一个奇异向量 v1 . . . . . . . . . . . . . . .299
 7.1.8 Computing Eigenvalues and Singular Values/计算特征值和奇异值 . . . . . . . . . . . . . . .300
 习题 7.1 . . . . . . . . . . . . . . . . . . . . .301
-7.2 Image Processing by Linear Algebra/通过线性代数来做图像处理 . . . . . . . . . . 297
+** 7.2 Image Processing by Linear Algebra/通过线性代数来做图像处理 . . . . . . . . . . 297
 7.2.1 Singular Values with Diagonals/对角矩阵的奇异值 . . . . . . . . . . . . . . . 304
 7.2.2 Image Compression by the SVD/利用奇异值分解进行图像压缩. . . . . . . . . . . . 305
 习题 7.2. . . . . . . . . . . . . . . . . . . . .306
-7.3 Principal Component Analysis (PCA by the SVD)/主成分分析 . . . .  302
+** 7.3 Principal Component Analysis (PCA by the SVD)/主成分分析 . . . .  302
 7.3.1 The Eckart-Young Theorem/埃克哈特-扬定理 . . . . . . . . . . . . . . .308
 7.3.2 Principal Component Analysis/通过奇异值分解进行主成分分析 . . . . . . . . . . . 309
 7.3.3 The Geometry Behind PCA/主成分分析背后的几何意义 . . . . . . . . . . . . .309
@@ -204,26 +204,26 @@ Orthogonal Matrices Q and Orthogonal Projections P
 7.3.5 The Statistics Behind PCA/主成分分析背后的统计学原理. . . . . . . . . . . . 310
 7.3.6 The Linear Algebra Behind PCA/主成分分析背后的线性代数 . . . . . . . . . . . . .311
 习题 7.3. . . . . . . . . . . . . . . . . . . . .312
-8 Linear Transformations/线性映射  . . . . . . . . . . . . . . . . .308
-8.1 The Idea of a Linear Transformation/线性映射的概念  . . . . . . . . . 309
+* 8 Linear Transformations/线性映射  . . . . . . . . . . . . . . . . .308
+** 8.1 The Idea of a Linear Transformation/线性映射的概念  . . . . . . . . . 309
 8.1.1 Lines to Lines, Triangles to Triangles/直线到直线，三角形到三角形. . . . . . . . . . . . 315
 8.1.2 Linear Transformations in Calculus/微积分中的线性映射 . . . . . . . . . . . . . . .316
 8.1.3 Examples of Transformations (mostly linear)/映射的例子（多数是线性的）. . . . . . . . . . . . 317
 习题 8.1. . . . . . . . . . . . . . . . . . . . .319
-8.2 The Matrix of a Linear Transformation/线性映射的矩阵. . . . . . . . . 318
+** 8.2 The Matrix of a Linear Transformation/线性映射的矩阵. . . . . . . . . 318
 8.2.1 Change of Basis : Matrix B/基变换：矩阵 B . . . . . . . . . . . . . . . .323
 8.2.2 Construction of the Matrix for T/构造线性映射 T的矩阵 . . . . . . . . . . . . . 324
 8.2.3 Matrix Products A B Match Transformations TS/矩阵乘积AB与映射复合TS相对应 . . . . . . . . . . 326
 8.2.4 Choosing the Best Bases/选择最好的基 . . . . . . . . . . . . . . . .326
 习题 8.2. . . . . . . . . . . . . . . . . . . . .328
-8.3 The Search for a Good Basis/寻找好的基 . . . . . . . . . . . . .  327
+** 8.3 The Search for a Good Basis/寻找好的基 . . . . . . . . . . . . .  327
 8.3.1 The Jordan Form/若尔当标准形 . . . . . . . . . . . . . . . .333
 8.3.2 Bases for Function Space/函数空间的基 . . . . . . . . . . . . . . . .335
 8.3.3 Orthogonal Bases for Function Space/函数空间的正交基 . . . . . . . . . . . . . . . 336
 8.3.4 Legendre Polynomials and Chebyshev Polynomials/勒让德多项式和切比雪夫多项式 . . . . . . . . . . . 336
 习题 8.3. . . . . . . . . . . . . . . . . . . . .337
-9 Linear Algebra in Optimization/最优化中的线性代数  . . . . . . . . . . . . .335
-9.1 Minimizing a Multivariable Function/多变量函数的最小化问题 . . . . . . . . .  336
+* 9 Linear Algebra in Optimization/最优化中的线性代数  . . . . . . . . . . . . .335
+** 9.1 Minimizing a Multivariable Function/多变量函数的最小化问题 . . . . . . . . .  336
 9.1.1 Gradient Descent = Steepest Descent/梯度下降=最速下降. . . . . . . . . . . . . . 341
 9.1.2 The Derivative of f(x) : n =1/n =1时一元函数 f(x)的一阶导数. . . . . . . . . . . 341
 9.1.3 The Geometry of the Gradient Vector V F/梯度向量?F的几何意义 . . . . . . . . . . . . .344
@@ -231,7 +231,7 @@ Orthogonal Matrices Q and Orthogonal Projections P
 9.1.5 Momentum and the Path of a Heavy Ball/动量与重球的路径 . . . . . . . . . . . . . . . 346
 9.1.6 The Quadratic Model/二次模型. . . . . . . . . . . . . . . . . 347
 习题 9.1. . . . . . . . . . . . . . . . . . . . .348
-9.2 Backpropagation and Stochastic Gradient Descent/反向传播和随机梯度下降 . . .  346
+** 9.2 Backpropagation and Stochastic Gradient Descent/反向传播和随机梯度下降 . . .  346
 9.2.1 The Multivariable Chain Rule/多变量链式法则. . . . . . . . . . . . . . . 350
 9.2.2 Stochastic Gradient Descent/随机梯度下降 . . . . . . . . . . . . . . . .350
 9.2.3 SGD for Ordinary Least Squares/普通最小二乘的 SGD. . . . . . . . . . . . . . 351
@@ -241,22 +241,22 @@ Orthogonal Matrices Q and Orthogonal Projections P
 9.2.7 Derivatives for Hidden Layers/隐藏层的偏导数. . . . . . . . . . . . . . . 354
 9.2.8 Details of the Derivatives w /0 A,/偏导数σw/σA_1的细节 . . . . . . . . . . . . . 354
 习题 9.2. . . . . . . . . . . . . . . . . . . . 355
-9.3 Constraints, Lagrange Multipliers, Minimum Norms/约束条件、拉格朗日乘子与最小范数 . . . 355
+** 9.3 Constraints, Lagrange Multipliers, Minimum Norms/约束条件、拉格朗日乘子与最小范数 . . . 355
 9.3.1 Lagrange Multipliers = Derivatives of the Cost/拉格朗日乘数法——成本函数的偏导数 . . . . . . . . . . 357
 9.3.2 Minimax = Maximin/极大值的极小值 =极小值的极大值. . . . . . . . . . . 359
 9.3.3 Quadratic Programming : General Case/二次规划：一般情形 . . . . . . . . . . . . . . .360
 9.3.4 Inequality Constraints/不等式约束 . . . . . . . . . . . . . . . . 361
 9.3.5 Dual Problems in Science and Engineering/科学与工程中的对偶问题 . . . . . . . . . . . . . 362
 习题 9.3. . . . . . . . . . . . . . . . . . . . .363
-9.4 Linear Programming, Game Theory, and Duality/线性规划、博弈论和对偶 . . . . . 364
+** 9.4 Linear Programming, Game Theory, and Duality/线性规划、博弈论和对偶 . . . . . 364
 9.4.1 Linear Programming/线性规划. . . . . . . . . . . . . . . . . 364
 9.4.2 An Example is Online/在线示例. . . . . . . . . . . . . . . . . 365
 9.4.3 Max Flow-Min Cut/最大流-最小割 . . . . . . . . . . . . . . . . 365
 9.4.4 Two Person Games/二人博弈 . . . . . . . . . . . . . . . . . 366
 9.4.5 Semidefinite Programming (SDP)/半定规划. . . . . . . . . . . . . . . . . 368
 习题 9.4. . . . . . . . . . . . . . . . . . . . .368
-10 Learning from Data/数据学习  . . . . . . . . . . . . . . . . . . 370
-10.1 Piecewise Linear Learning Functions/分段线性学习函数 . . . . . . . . . 372
+* 10 Learning from Data/数据学习  . . . . . . . . . . . . . . . . . . 370
+** 10.1 Piecewise Linear Learning Functions/分段线性学习函数 . . . . . . . . . 372
 10.1.1 The Construction of Deep Neural Networks/深度神经网络的构建. . . . . . . . . . . . . . 373
 10.1.2 F} is a Piecewise Linear Function of vy /Fk是 vk-1的分段线性函数 . . . . . . . . . . . .373
 10.1.3 One Internal Layer (L = 2)/一个中间层（L =2）的情况 . . . . . . . . . . . . 374
@@ -265,13 +265,13 @@ Orthogonal Matrices Q and Orthogonal Projections P
 10.1.6 Flat Pieces of F'(v) with More Hidden Layers/计算学习函数图像的平坦分块个数：更多中间层的情形. . . . . 377
 10.1.7 Dropout/移除. . . . . . . . . . . . . . . . . .378
 习题 10.1 . . . . . . . . . . . . . . . . . . . .378
-10.2 Creating and Experimenting/发明和实验 . . . . . . . . . . . . .  381
+** 10.2 Creating and Experimenting/发明和实验 . . . . . . . . . . . . .  381
 10.2.1 Generalization and Double Descent/泛化与双重下降 . . . . . . . . . . . . . . . 380
 10.2.2 Convolutional Neural Nets : Sharing the Weights/卷积神经网络：权重共享 . . . . . . . . . . . . .381
 10.2.3 Max-pooling/最大池化 . . . . . . . . . . . . . . . . 381
 10.2.4 Four Big Successes of Deep Learning/深度学习领域的四大重要成就 . . . . . . . . . . . 382
 习题 10.2 . . . . . . . . . . . . . . . . . . . .382
-10.3 Mean, Variance, and Covariance/均值、方差和协方差 . . . . . . . . .. . . 386
+** 10.3 Mean, Variance, and Covariance/均值、方差和协方差 . . . . . . . . .. . . 386
 10.3.1 Variance (around the mean)/方差. . . . . . . . . . . . . . . . . .384
 10.3.2 Continuous Probability Distributions/连续概率分布. . . . . . . . . . . . . . . 385
 10.3.3 Mean and Variance of p(x)/p(x)的均值和方差 . . . . . . . . . . . . . . 386
@@ -282,16 +282,16 @@ Orthogonal Matrices Q and Orthogonal Projections P
 10.3.8 The Covariance Matrixfor Z = AX/Z = AX的协方差矩阵 . . . . . . . . . . . . .393
 10.3.9 The Correlation p/相关性ρ. . . . . . . . . . . . . . . . .394
 习题 10.3 . . . . . . . . . . . . . . . . . . . .394
-Appendix 1 The Ranks of AB and A + B/矩阵AB与A+B的秩   . . . . . . . . . . .400/397
-Appendix 2 Matrix Factorizations/矩阵分解  . . . . . . . . . . . . . .401/398
-Appendix 3 Counting Parameters in the Basic Factorizations/基本矩阵分解中的参量技术问题 403/
-Appendix 4 Codes and Algorithms for Numerical Linear Algebra/数值线性代数中相关代码与算法 404/
-Appendix 5 The Jordan Form of a Square Matrix/方阵的若尔当标准形. . . . . . . 405/
-Appendix 6 Tensors/张量  . . . . . . . . . . . . . . . . . . . .406/
-Appendix 7 The Condition Number of a Matrix Problem/矩阵问题的条件数 . . . . 407/
-Appendix 8 Markov Matrices and Perron-Frobenius/马尔科夫矩阵与佩龙-弗罗比尼斯定理. . . . . . 408/
-Appendix 9 Elimination and Factorization/消元法与矩阵分解 . . . . . . . . . 410/
-Appendix 10 Computer Graphics/计算机图形学 . . . . . . . . . . . . . . .413/
-Index of Equations/ . . . . . . . . . . . . . . . . . . . . 419/
-Index of Notations/ . . . . . . . . . . . . . . . . . . . . 422/
-Index . . . . . . . . . . . . . . . . . . . . . . . . . . .423/
+* Appendix 1 The Ranks of AB and A + B/矩阵AB与A+B的秩   . . . . . . . . . . .400/397
+* Appendix 2 Matrix Factorizations/矩阵分解  . . . . . . . . . . . . . .401/398
+* Appendix 3 Counting Parameters in the Basic Factorizations/基本矩阵分解中的参量技术问题 403/
+* Appendix 4 Codes and Algorithms for Numerical Linear Algebra/数值线性代数中相关代码与算法 404/
+* Appendix 5 The Jordan Form of a Square Matrix/方阵的若尔当标准形. . . . . . . 405/
+* Appendix 6 Tensors/张量  . . . . . . . . . . . . . . . . . . . .406/
+* Appendix 7 The Condition Number of a Matrix Problem/矩阵问题的条件数 . . . . 407/
+* Appendix 8 Markov Matrices and Perron-Frobenius/马尔科夫矩阵与佩龙-弗罗比尼斯定理. . . . . . 408/
+* Appendix 9 Elimination and Factorization/消元法与矩阵分解 . . . . . . . . . 410/
+* Appendix 10 Computer Graphics/计算机图形学 . . . . . . . . . . . . . . .413/
+* Index of Equations/ . . . . . . . . . . . . . . . . . . . . 419/
+* Index of Notations/ . . . . . . . . . . . . . . . . . . . . 422/
+* Index . . . . . . . . . . . . . . . . . . . . . . . . . . .423/
