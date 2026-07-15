@@ -181,33 +181,117 @@ Orthogonal Matrices Q and Orthogonal Projections P
 习题 6.5. . . . . . . . . . . . . . . . . . . . .286
 6.6 Computing the Eigenvalues : The QR Algorithm/用QR计算特征值 . . . . . . . . . . . . . . . . .284/290
 6.7 Thoughts about Differential Equations/谈谈微分方程. . . . . . . . . . . . . . . . . .285/292
-7 The Singular Value Decomposition (SVD)  . . . . . . . . .286
-7.1 Singular Values and Singular Vectors . . . . . . . . . 287
-7.2 Image Processing by Linear Algebra . . . . . . . . . . 297
-7.3 Principal Component Analysis (PCA by the SVD) . . . .  302
-8 Linear Transformations  . . . . . . . . . . . . . . . . .308
-8.1 The Idea of a Linear Transformation  . . . . . . . . . 309
-8.2 The Matrix of a Linear Transformation. . . . . . . . . 318
-8.3 The Search for a Good Basis . . . . . . . . . . . . .  327
-9 Linear Algebra in Optimization  . . . . . . . . . . . . .335
-9.1 Minimizing a Multivariable Function . . . . . . . . .  336
-9.2 Backpropagation and Stochastic Gradient Descent . . .  346
-9.3 Constraints, Lagrange Multipliers, Minimum Norms . . . 355
-9.4 Linear Programming, Game Theory, and Duality . . . . . 364
-10 Learning from Data  . . . . . . . . . . . . . . . . . . 370
-10.1 Piecewise Linear Learning Functions . . . . . . . . . 372
-10.2 Creating and Experimenting . . . . . . . . . . . . .  381
-10.3 Mean, Variance, and Covariance . . . . . . . . .. . . 386
-Appendix 1 The Ranks of AB and A + B  . . . . . . . . . . .400
-Appendix 2 Matrix Factorizations. . . . . . . . . . . . . .401
-Appendix 3 Counting Parameters in the Basic Factorizations 403
-Appendix 4 Codes and Algorithms for Numerical Linear Algebra 404
-Appendix 5 The Jordan Form of a Square Matrix. . . . . . . 405
-Appendix 6 Tensors  . . . . . . . . . . . . . . . . . . . .406
-Appendix 7 The Condition Number of a Matrix Problem. . . . 407
-Appendix 8 Markov Matrices and Perron-Frobenius. . . . . . 408
-Appendix 9 Elimination and Factorization . . . . . . . . . 410
-Appendix 10 Computer Graphics . . . . . . . . . . . . . . .413
-Index of Equations . . . . . . . . . . . . . . . . . . . . 419
-Index of Notations . . . . . . . . . . . . . . . . . . . . 422
-Index . . . . . . . . . . . . . . . . . . . . . . . . . . .423
+7 The Singular Value Decomposition (SVD)/奇异值分解  . . . . . . . . .286
+7.1 Singular Values and Singular Vectors/奇异值和奇异向量 . . . . . . . . . 287
+7.1.1 The Geometry of the SVD/奇异值分解的几何意义. . . . . . . . . . . . . . 294
+7.1.2 The Full Size Form of the SVD/奇异值分解的完整型 . . . . . . . . . . . . . . .295
+7.1.3 The Reduced Form of the SVD/奇异值分解的简化型 . . . . . . . . . . . . . . .296
+7.1.4 Proof of the SVD/奇异值分解的证明 . . . . . . . . . . . . . . . 296
+7.1.5 AB and BA: Equal Nonzero Eigenvalues/AB和 BA：相同的非零特征值. . . . . . . . . . . 298
+7.1.6 Singular Vectors for 2 by 2 Matrices/2 × 2矩阵的奇异向量 . . . . . . . . . . . . . .299
+7.1.7 The First Singular Vector v1/第一个奇异向量 v1 . . . . . . . . . . . . . . .299
+7.1.8 Computing Eigenvalues and Singular Values/计算特征值和奇异值 . . . . . . . . . . . . . . .300
+习题 7.1 . . . . . . . . . . . . . . . . . . . . .301
+7.2 Image Processing by Linear Algebra/通过线性代数来做图像处理 . . . . . . . . . . 297
+7.2.1 Singular Values with Diagonals/对角矩阵的奇异值 . . . . . . . . . . . . . . . 304
+7.2.2 Image Compression by the SVD/利用奇异值分解进行图像压缩. . . . . . . . . . . . 305
+习题 7.2. . . . . . . . . . . . . . . . . . . . .306
+7.3 Principal Component Analysis (PCA by the SVD)/主成分分析 . . . .  302
+7.3.1 The Eckart-Young Theorem/埃克哈特-扬定理 . . . . . . . . . . . . . . .308
+7.3.2 Principal Component Analysis/通过奇异值分解进行主成分分析 . . . . . . . . . . . 309
+7.3.3 The Geometry Behind PCA/主成分分析背后的几何意义 . . . . . . . . . . . . .309
+7.3.4 The Geometric Meaning of Eckart-Young/埃克哈特-扬定理的几何意义 . . . . . . . . . . . . 310
+7.3.5 The Statistics Behind PCA/主成分分析背后的统计学原理. . . . . . . . . . . . 310
+7.3.6 The Linear Algebra Behind PCA/主成分分析背后的线性代数 . . . . . . . . . . . . .311
+习题 7.3. . . . . . . . . . . . . . . . . . . . .312
+8 Linear Transformations/线性映射  . . . . . . . . . . . . . . . . .308
+8.1 The Idea of a Linear Transformation/线性映射的概念  . . . . . . . . . 309
+8.1.1 Lines to Lines, Triangles to Triangles/直线到直线，三角形到三角形. . . . . . . . . . . . 315
+8.1.2 Linear Transformations in Calculus/微积分中的线性映射 . . . . . . . . . . . . . . .316
+8.1.3 Examples of Transformations (mostly linear)/映射的例子（多数是线性的）. . . . . . . . . . . . 317
+习题 8.1. . . . . . . . . . . . . . . . . . . . .319
+8.2 The Matrix of a Linear Transformation/线性映射的矩阵. . . . . . . . . 318
+8.2.1 Change of Basis : Matrix B/基变换：矩阵 B . . . . . . . . . . . . . . . .323
+8.2.2 Construction of the Matrix for T/构造线性映射 T的矩阵 . . . . . . . . . . . . . 324
+8.2.3 Matrix Products A B Match Transformations TS/矩阵乘积AB与映射复合TS相对应 . . . . . . . . . . 326
+8.2.4 Choosing the Best Bases/选择最好的基 . . . . . . . . . . . . . . . .326
+习题 8.2. . . . . . . . . . . . . . . . . . . . .328
+8.3 The Search for a Good Basis/寻找好的基 . . . . . . . . . . . . .  327
+8.3.1 The Jordan Form/若尔当标准形 . . . . . . . . . . . . . . . .333
+8.3.2 Bases for Function Space/函数空间的基 . . . . . . . . . . . . . . . .335
+8.3.3 Orthogonal Bases for Function Space/函数空间的正交基 . . . . . . . . . . . . . . . 336
+8.3.4 Legendre Polynomials and Chebyshev Polynomials/勒让德多项式和切比雪夫多项式 . . . . . . . . . . . 336
+习题 8.3. . . . . . . . . . . . . . . . . . . . .337
+9 Linear Algebra in Optimization/最优化中的线性代数  . . . . . . . . . . . . .335
+9.1 Minimizing a Multivariable Function/多变量函数的最小化问题 . . . . . . . . .  336
+9.1.1 Gradient Descent = Steepest Descent/梯度下降=最速下降. . . . . . . . . . . . . . 341
+9.1.2 The Derivative of f(x) : n =1/n =1时一元函数 f(x)的一阶导数. . . . . . . . . . . 341
+9.1.3 The Geometry of the Gradient Vector V F/梯度向量?F的几何意义 . . . . . . . . . . . . .344
+9.1.4 An Important Example with Zig-Zag/一个重要的“之字形”示例 . . . . . . . . . . . . .345
+9.1.5 Momentum and the Path of a Heavy Ball/动量与重球的路径 . . . . . . . . . . . . . . . 346
+9.1.6 The Quadratic Model/二次模型. . . . . . . . . . . . . . . . . 347
+习题 9.1. . . . . . . . . . . . . . . . . . . . .348
+9.2 Backpropagation and Stochastic Gradient Descent/反向传播和随机梯度下降 . . .  346
+9.2.1 The Multivariable Chain Rule/多变量链式法则. . . . . . . . . . . . . . . 350
+9.2.2 Stochastic Gradient Descent/随机梯度下降 . . . . . . . . . . . . . . . .350
+9.2.3 SGD for Ordinary Least Squares/普通最小二乘的 SGD. . . . . . . . . . . . . . 351
+9.2.4 The Key Ideas of Backpropagation/反向传播的核心思想 . . . . . . . . . . . . . . .351
+9.2.5 Backpropagation in Keras and TensorFlow/Keras与 TensorFlow中的反向传播 . . . . . . . . . . .353
+9.2.6 Derivatives of Av + b/Av + b的导数 . . . . . . . . . . . . . . . .353
+9.2.7 Derivatives for Hidden Layers/隐藏层的偏导数. . . . . . . . . . . . . . . 354
+9.2.8 Details of the Derivatives w /0 A,/偏导数σw/σA_1的细节 . . . . . . . . . . . . . 354
+习题 9.2. . . . . . . . . . . . . . . . . . . . 355
+9.3 Constraints, Lagrange Multipliers, Minimum Norms/约束条件、拉格朗日乘子与最小范数 . . . 355
+9.3.1 Lagrange Multipliers = Derivatives of the Cost/拉格朗日乘数法——成本函数的偏导数 . . . . . . . . . . 357
+9.3.2 Minimax = Maximin/极大值的极小值 =极小值的极大值. . . . . . . . . . . 359
+9.3.3 Quadratic Programming : General Case/二次规划：一般情形 . . . . . . . . . . . . . . .360
+9.3.4 Inequality Constraints/不等式约束 . . . . . . . . . . . . . . . . 361
+9.3.5 Dual Problems in Science and Engineering/科学与工程中的对偶问题 . . . . . . . . . . . . . 362
+习题 9.3. . . . . . . . . . . . . . . . . . . . .363
+9.4 Linear Programming, Game Theory, and Duality/线性规划、博弈论和对偶 . . . . . 364
+9.4.1 Linear Programming/线性规划. . . . . . . . . . . . . . . . . 364
+9.4.2 An Example is Online/在线示例. . . . . . . . . . . . . . . . . 365
+9.4.3 Max Flow-Min Cut/最大流-最小割 . . . . . . . . . . . . . . . . 365
+9.4.4 Two Person Games/二人博弈 . . . . . . . . . . . . . . . . . 366
+9.4.5 Semidefinite Programming (SDP)/半定规划. . . . . . . . . . . . . . . . . 368
+习题 9.4. . . . . . . . . . . . . . . . . . . . .368
+10 Learning from Data/数据学习  . . . . . . . . . . . . . . . . . . 370
+10.1 Piecewise Linear Learning Functions/分段线性学习函数 . . . . . . . . . 372
+10.1.1 The Construction of Deep Neural Networks/深度神经网络的构建. . . . . . . . . . . . . . 373
+10.1.2 F} is a Piecewise Linear Function of vy /Fk是 vk-1的分段线性函数 . . . . . . . . . . . .373
+10.1.3 One Internal Layer (L = 2)/一个中间层（L =2）的情况 . . . . . . . . . . . . 374
+10.1.4 The Graph of the Learning Function F'(v)/学习函数 F (v)的图像. . . . . . . . . . . . . .375
+10.1.5 Counting Flat Pieces in the Graph : One Internal Layer/计算学习函数图像的平坦分块个数：一个中间层的情形. . . . . 376
+10.1.6 Flat Pieces of F'(v) with More Hidden Layers/计算学习函数图像的平坦分块个数：更多中间层的情形. . . . . 377
+10.1.7 Dropout/移除. . . . . . . . . . . . . . . . . .378
+习题 10.1 . . . . . . . . . . . . . . . . . . . .378
+10.2 Creating and Experimenting/发明和实验 . . . . . . . . . . . . .  381
+10.2.1 Generalization and Double Descent/泛化与双重下降 . . . . . . . . . . . . . . . 380
+10.2.2 Convolutional Neural Nets : Sharing the Weights/卷积神经网络：权重共享 . . . . . . . . . . . . .381
+10.2.3 Max-pooling/最大池化 . . . . . . . . . . . . . . . . 381
+10.2.4 Four Big Successes of Deep Learning/深度学习领域的四大重要成就 . . . . . . . . . . . 382
+习题 10.2 . . . . . . . . . . . . . . . . . . . .382
+10.3 Mean, Variance, and Covariance/均值、方差和协方差 . . . . . . . . .. . . 386
+10.3.1 Variance (around the mean)/方差. . . . . . . . . . . . . . . . . .384
+10.3.2 Continuous Probability Distributions/连续概率分布. . . . . . . . . . . . . . . 385
+10.3.3 Mean and Variance of p(x)/p(x)的均值和方差 . . . . . . . . . . . . . . 386
+10.3.4 Normal Distribution : Bell-shaped Curve/正态分布：钟形曲线. . . . . . . . . . . . . . 387
+10.3.5 Mean and Variance : IN Coin Flips and N — oo/均值和方差：投掷 N次硬币，以及 N ～.的渐进行为 . . . . .388
+10.3.6 Covariance Matrices and Joint Probabilities/协方差矩阵和联合概率 . . . . . . . . . . . . . 390
+10.3.7 The Covariance Matrix V is Positive Semidefinite/协方差矩阵 V的半正定性 . . . . . . . . . . . . .392
+10.3.8 The Covariance Matrixfor Z = AX/Z = AX的协方差矩阵 . . . . . . . . . . . . .393
+10.3.9 The Correlation p/相关性ρ. . . . . . . . . . . . . . . . .394
+习题 10.3 . . . . . . . . . . . . . . . . . . . .394
+Appendix 1 The Ranks of AB and A + B/矩阵AB与A+B的秩   . . . . . . . . . . .400/397
+Appendix 2 Matrix Factorizations/矩阵分解  . . . . . . . . . . . . . .401/398
+Appendix 3 Counting Parameters in the Basic Factorizations/基本矩阵分解中的参量技术问题 403/
+Appendix 4 Codes and Algorithms for Numerical Linear Algebra/数值线性代数中相关代码与算法 404/
+Appendix 5 The Jordan Form of a Square Matrix/方阵的若尔当标准形. . . . . . . 405/
+Appendix 6 Tensors/张量  . . . . . . . . . . . . . . . . . . . .406/
+Appendix 7 The Condition Number of a Matrix Problem/矩阵问题的条件数 . . . . 407/
+Appendix 8 Markov Matrices and Perron-Frobenius/马尔科夫矩阵与佩龙-弗罗比尼斯定理. . . . . . 408/
+Appendix 9 Elimination and Factorization/消元法与矩阵分解 . . . . . . . . . 410/
+Appendix 10 Computer Graphics/计算机图形学 . . . . . . . . . . . . . . .413/
+Index of Equations/ . . . . . . . . . . . . . . . . . . . . 419/
+Index of Notations/ . . . . . . . . . . . . . . . . . . . . 422/
+Index . . . . . . . . . . . . . . . . . . . . . . . . . . .423/
